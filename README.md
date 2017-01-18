@@ -51,3 +51,41 @@ From now on, you can switch to the pydecal env with ```source activate pydecal``
 Check you have the latest version by typing ```git --version```. It should be 2.5.0 or higher. 
 You may remove the ```install_anaconda.sh``` script now if you’d like since it’s quite large.
 
+
+## Windows 
+
+1) Visit https://www.continuum.io/downloads#windows and download the installer for Python 2.7. Download the 64-bit installer if your computer is 64-bit (more likely), the 32-bit installer if not. You can Google how to check whether your computer is 64 or 32 bit.
+
+2) Leave all the options as default (install for all users, in the default location). Make sure both of the checkboxes (add to path, register) are checked.
+
+3) Install.
+
+4) Verify that the installation is working by starting the Anaconda Prompt (you should be able to start it from the Start Menu) and typing ```python```:
+
+5) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 2.7, but you might have another that uses Python 3. With a conda environment, you can switch between those at will.
+```
+ # Create a conda env called pydecal that uses python 2.7
+ conda create --name pydecal python=2.7
+
+ # Switch to the pydecal environment
+ activate pydecal
+
+ # Install the packages for pydecal
+ conda install -n pydecal jupyter pandas numpy matplotlib
+ pip install okpy
+```
+From now on, you can switch to the pydecal env with ```activate pydecal```, and switch back to the default env with ```deactivate```.
+
+### Installing git 
+
+1) You might already have ```git``` installed. Type ```git``` at the Anaconda Prompt. If that works, then you can skip these steps. 
+
+2) If step one didn't work, at the anaconda prompt, type:
+```
+ # Use anaconda to install git
+ conda install -c anaconda git -y
+```
+
+3) Now, verify that git is installed by typing ```git --version``` on the command line. 
+
+
