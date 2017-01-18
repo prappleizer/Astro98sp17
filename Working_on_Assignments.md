@@ -42,4 +42,8 @@ git push -u origin master #push changes to YOUR directory
 At which point, your terminal will ask you for your github username and password and then upload the files. Of course you can also set up your own github repositories that you pull and push from at will. 
 
 
+#Turning in Assignments for Python Decal
+
+You will be getting the files you need for the class by git pulling them, and you will be submitting them using the okpy infrastucture. For the first few tutorials, this will be built in, and you won't have to worry about it, and once the tutorials shift out of ipython notebooks we will show you how to submit via okpy (it's an easy one line command).
+
 
