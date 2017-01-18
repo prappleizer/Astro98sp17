@@ -23,13 +23,14 @@ Verify your installation by making sure brew --version doesn’t error at your t
  # Uses wget to download the installation script, naming it install_anaconda.sh
  wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-MacOSX-x86_64.sh
 ```
-5. Install Anaconda:
+5) Install Anaconda:
 ```
  # Run the installation script
  bash install_anaconda.sh
 ```
 Ensure the installation worked by running ```conda --version```.
-6. Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 2.7, but you might have another that uses Python 3. With a conda environment, you can switch between those at will.
+
+6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 2.7, but you might have another that uses Python 3. With a conda environment, you can switch between those at will.
 ```
  # Create a conda env called pydecal that uses python 2.7
  conda create --name pydecal python=2.7
@@ -43,7 +44,7 @@ source activate ds100
 ```
 From now on, you can switch to the pydecal env with ```source activate ds100```, and switch back to the default env with ```source deactivate```.
 
-7. Now, use brew to install the latest version of git by running:
+7) Now, use brew to install the latest version of git by running:
 ```
  brew install git
 ```
