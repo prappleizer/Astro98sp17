@@ -30,10 +30,10 @@ Verify your installation by making sure brew --version doesn’t error at your t
 ```
 Ensure the installation worked by running ```conda --version```.
 
-6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 2.7, but you might have another that uses Python 3. With a conda environment, you can switch between those at will.
+6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.5, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
 ```
- # Create a conda env called pydecal that uses python 2.7
- conda create --name pydecal python=2.7
+ # Create a conda env called pydecal that uses python 3.5
+ conda create --name pydecal python=3.5
 
 # Switch to the pydecal environment
 source activate pydecal
@@ -54,7 +54,7 @@ You may remove the ```install_anaconda.sh``` script now if you’d like since it
 
 ## Windows 
 
-1) Visit https://www.continuum.io/downloads#windows and download the installer for Python 2.7. Download the 64-bit installer if your computer is 64-bit (more likely), the 32-bit installer if not. You can Google how to check whether your computer is 64 or 32 bit.
+1) Visit https://www.continuum.io/downloads#windows and download the installer for Python 3.5. Download the 64-bit installer if your computer is 64-bit (more likely), the 32-bit installer if not. You can Google how to check whether your computer is 64 or 32 bit.
 
 2) Leave all the options as default (install for all users, in the default location). Make sure both of the checkboxes (add to path, register) are checked.
 
@@ -62,10 +62,10 @@ You may remove the ```install_anaconda.sh``` script now if you’d like since it
 
 4) Verify that the installation is working by starting the Anaconda Prompt (you should be able to start it from the Start Menu) and typing ```python```:
 
-5) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 2.7, but you might have another that uses Python 3. With a conda environment, you can switch between those at will.
+5) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.5, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
 ```
- # Create a conda env called pydecal that uses python 2.7
- conda create --name pydecal python=2.7
+ # Create a conda env called pydecal that uses python 3.5
+ conda create --name pydecal python=3.5
 
  # Switch to the pydecal environment
  activate pydecal
