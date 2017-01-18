@@ -35,8 +35,8 @@ Ensure the installation worked by running ```conda --version```.
  # Create a conda env called pydecal that uses python 2.7
  conda create --name pydecal python=2.7
 
-# Switch to the ds100 environment
-source activate ds100
+# Switch to the pydecal environment
+source activate pydecal
 
  # Install the packages for this class
  conda install -n pydecal jupyter pandas numpy matplotlib
