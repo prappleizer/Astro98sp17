@@ -42,7 +42,7 @@ source activate pydecal
  conda install -n pydecal jupyter pandas numpy matplotlib
  pip install okpy
 ```
-From now on, you can switch to the pydecal env with ```source activate ds100```, and switch back to the default env with ```source deactivate```.
+From now on, you can switch to the pydecal env with ```source activate pydecal```, and switch back to the default env with ```source deactivate```.
 
 7) Now, use brew to install the latest version of git by running:
 ```
