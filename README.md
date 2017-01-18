@@ -11,7 +11,8 @@
 # This downloads the Ruby code of the installation script and runs it
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-Verify your installation by making sure brew --version doesn’t error at your terminal.
+  Verify your installation by making sure brew --version doesn’t error at your terminal.
+
 
 3. Next, install ```wget```. This is a command-line tool that lets you download files / webpages at the command line.
 ```
