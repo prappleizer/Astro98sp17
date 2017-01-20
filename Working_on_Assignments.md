@@ -8,7 +8,7 @@ git clone https://github.com/prappleizer/Astro98sp17.git
 ```
 This should clone the the class repo onto your computer. (That is, if you type ```ls``` in terminal you should now have an Astro98sp17 folder there). 
 
-2) This directory is what is known as "git enabled," which means that when we put a new assignment onto github, all you have to do is go to Astro98sp17/ on your computer and type 
+2) This directory is what is known as "git enabled," which means that when we put a new assignment onto github, all you have to do is ``cd Astro98sp17``` on your computer and type 
 ```
 git pull
 ```
@@ -19,7 +19,7 @@ to get the most recent version/any new files or tutorials we have uploaded.
 Once you have done the git clone step, do the following commands:
 1) 
 ```
-source activate pydecal
+source activate pydecal #if it isn't already
 cd Astro98sp17/tutorials/hw0
 ```
 2)
