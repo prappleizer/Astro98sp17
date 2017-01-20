@@ -28,6 +28,7 @@ Verify your installation by making sure brew --version doesn’t error at your t
  # Run the installation script
  bash install_anaconda.sh
 ```
+Restart your terminal at this point (not just closing the window, but quitting the application from the bar) and then reopening.
 Ensure the installation worked by running ```conda --version```.
 
 6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.5, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
@@ -87,5 +88,7 @@ From now on, you can switch to the pydecal env with ```activate pydecal```, and 
 ```
 
 3) Now, verify that git is installed by typing ```git --version``` on the command line. 
+
+To see how you will be obtaining and submitting your homework for this class, please 
 
 
