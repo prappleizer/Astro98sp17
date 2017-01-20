@@ -14,6 +14,20 @@ git pull
 ```
 to get the most recent version/any new files or tutorials we have uploaded.
 
+## To complete Homework 0
+
+Once you have done the git clone step, do the following commands:
+1) 
+```
+source activate pydecal
+cd Astro98sp17/tutorials/hw0
+```
+2)
+```
+jupyter notebook hw0.ipynb
+```
+
+
 ## If you want your own github to work with
 
 1) If you want to get practice using git and backing up your work online, go to ```http://www.github.com``` and sign up for an account. NOTE: Please do not use the following method for tutorials in this class, as they will be public. However, feel free to use it for your final project, etc. The following is just an example to show how it would work.
