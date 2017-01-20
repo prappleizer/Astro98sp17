@@ -8,7 +8,7 @@ git clone https://github.com/prappleizer/Astro98sp17.git
 ```
 This should clone the the class repo onto your computer. (That is, if you type ```ls``` in terminal you should now have an Astro98sp17 folder there). 
 
-2) This directory is what is known as "git enabled," which means that when we put a new assignment onto github, all you have to do is ``cd Astro98sp17``` on your computer and type 
+2) This directory is what is known as "git enabled," which means that when we put a new assignment onto github, all you have to do is ```cd Astro98sp17``` on your computer and type 
 ```
 git pull
 ```
