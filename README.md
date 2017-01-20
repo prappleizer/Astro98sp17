@@ -92,4 +92,4 @@ From now on, you can switch to the pydecal env with ```activate pydecal```, and 
 
 To see how you will be obtaining and submitting your homework for this class, please 
 
-
+To continue to the next part (setting up the assignments directory), click here: http://github.com/prappleizer/Astro98sp17/blob/master/Working_on_Assignments.md 
