@@ -93,3 +93,60 @@ From now on, you can switch to the pydecal env with ```activate pydecal```, and 
 To see how you will be obtaining and submitting your homework for this class, please 
 
 To continue to the next part (setting up the assignments directory), click here: http://github.com/prappleizer/Astro98sp17/blob/master/Working_on_Assignments.md 
+
+
+## LINUX Install
+
+These instructions assume you have ```apt-get``` (Ubuntu and Debian). For other distributions of Linux, substitute the available package manager.
+
+You likely already know this if you’re running Linux, but just in case: your terminal program allows you to type commands to control your computer. On Linux, you can open the Terminal by going to the Applications menu and clicking “Terminal”.
+
+1) Install ```wget```. This is a command-line tool that lets you download files / webpages at the command line.
+```
+sudo apt-get install wget
+```
+
+2) Download the Anaconda installation script:
+```
+wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+```
+If you have a 32-bit operating system, use this command instead.
+
+```
+wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86.sh
+```
+
+3) Install Anaconda:
+```
+bash install_anaconda.sh
+```
+Ensure the installation worked by running ```conda --version```.
+
+4) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3, but you might have another that uses Python 2. With a conda environment, you can switch between those at will.
+```
+conda create --name pydecal python=3.5
+```
+```
+source activate pydecal
+```
+```
+conda install -n pydecal jupyter pandas numpy matplotlib
+```
+```
+pip install okpy
+```
+From now on, you can switch to the pydecal env with ```source activate ds100```, and switch back to the default env with ```source deactivate```.
+
+5) Now, install the latest version of ```git```:
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+```
+Ensure that ```git``` is installed by running ```git --version```. The version should be 2.5.0 or higher.
+
+You can now delete (rm) the anaconda_install.sh as the file is quite large. 
+
+6) Click here: http://github.com/prappleizer/Astro98sp17/blob/master/Working_on_Assignments.md to finish the setup. 
+
+
