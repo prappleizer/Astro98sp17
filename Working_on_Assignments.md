@@ -10,9 +10,9 @@ This should clone the the class repo onto your computer. (That is, if you type `
 
 2) This directory is what is known as "git enabled," which means that when we put a new assignment onto github, all you have to do is ```cd Astro98sp17``` on your computer and type 
 ```
-git pull
+git pull -s recursive -X ours
 ```
-to get the most recent version/any new files or tutorials we have uploaded.
+to get the most recent version/any new files or tutorials we have uploaded, while telling git to leave well alone the files you've been working with already.
 
 ## To complete Homework 0
 
