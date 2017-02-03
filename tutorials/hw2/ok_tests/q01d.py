@@ -8,7 +8,7 @@ test = {
           'code': r"""
           >>> type(continuum_subtracted_spectrum) == np.ndarray
           True
-          >>> np.mean(continuum_subtracted_spectrum) == -299.99999999999739
+          >>> int(np.mean(continuum_subtracted_spectrum)) == -299
           True
           >>> np.min(continuum_subtracted_spectrum)== -4906.1684096271383
           True
