@@ -6,11 +6,11 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> quad_solve(5,1,-5)==None
+          >>> quad_solve(2,3,4)==None
           True
-          >>> quad_solve(1,5,7)==(1.140054944640259, -6.1400549446402586)
+          >>> quad_solve(2,5,1)==(3.0, -5.5)
           True
-          >>> quad_solve(3,9,12)==(1.0, -4.0)
+          >>> quad_solve(1,5,2)==(6.0, -11.0)
           True
           """,
           'hidden': False,
