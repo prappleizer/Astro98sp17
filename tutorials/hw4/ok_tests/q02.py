@@ -16,7 +16,11 @@ test = {
         }
       ],
       'scored': True,
-      'setup': '',
+      'setup': r"""
+      >>> from hw4 import *
+      >>> x, y = load_data('data.txt')
+      >>> import numpy as np
+      """,
       'teardown': '',
       'type': 'doctest'
     }

@@ -16,7 +16,10 @@ test = {
         }
       ],
       'scored': True,
-      'setup': '',
+      'setup': r"""
+      >>> from hw4 import *
+      >>> import numpy as np
+      """,
       'teardown': '',
       'type': 'doctest'
     }

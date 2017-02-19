@@ -6,23 +6,27 @@ test = {
       'cases': [
         {
           'code': r"""
-                    >>> False not in np.isclose(np.array([find_residuals(x,y)[1][i] for i in find_residuals(x,y)[1].keys()]),[-5.2935433814127465e-14,-48.030965403761797,44.770746614675517,19.093481326060257],rtol=1E-4) 
-                    True
-          	  >>> 'mean' in list(find_residuals(x,y)[1].keys())
-          	  True 
-          	  >>> 'min' in list(find_residuals(x,y)[1].keys())
-          	  True
-                    >>> 'max' in list(find_residuals(x,y)[1].keys())
-          	  True
-          	  >>> 'std' in list(find_residuals(x,y)[1].keys())
-          	  True
+          >>> 'mean' in list(find_residuals(x,y)[1].keys())
+          True
+          >>> 'min' in list(find_residuals(x,y)[1].keys())
+          True
+          >>> 'max' in list(find_residuals(x,y)[1].keys())
+          True
+          >>> 'std' in list(find_residuals(x,y)[1].keys())
+          True
+          >>> False not in np.isclose(np.array(np.median(find_residuals(x,y)[0])),np.array([-0.92225898557427399]),rtol=1E-2)
+          True
           """,
           'hidden': False,
           'locked': False
         }
       ],
       'scored': True,
-      'setup': '',
+      'setup': r"""
+      >>> from hw4 import *
+      >>> import numpy as np
+      >>> x, y = load_data('data.txt')
+      """,
       'teardown': '',
       'type': 'doctest'
     }
