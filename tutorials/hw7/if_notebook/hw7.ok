@@ -1,0 +1,15 @@
+{
+  "name": "Tutorial 7 (Extra Credit)",
+  "endpoint": "cal/astro/sp17/hw7",
+  "src": [
+    "hw7.ipynb"
+  ],
+  "tests": {
+      "ok_tests/q*.py": "ok_test"
+  },
+  "protocols": [
+      "file_contents",
+      "grading",
+      "backup"
+  ]
+}
