@@ -2,7 +2,7 @@
   "name": "Tutorial 7 (Extra Credit)",
   "endpoint": "cal/astro/sp17/hw7",
   "src": [
-    "hw7.ipynb"
+    "hw7.ipy"
   ],
   "tests": {
       "ok_tests/q*.py": "ok_test"
