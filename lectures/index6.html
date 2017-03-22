@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Imad Pasha</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<img src='git.png' height="300" title="I like XKCD comics">
+<h1>Imad Pasha</h1>
+<h3>Undergraduate Researcher | University of California, Berkeley</h3>
+<p>I like space.</p>
+<hr>
+<h2>Links</h2>
+<p><a href="cv.pdf">My Resume/CV</a></p>
+<p><a href="blah">Publications</a></p> 
+<p><a href="http://prappleizer.github.io" target="_blank">Python Resources (including my textbook)</a></p>
+
+<hr>
+<h2> Research </h2>
+<h3> Composite Galaxy SEDs</h3>
+<div>
+  <input type="checkbox" class="read-more-state" id="post-1" />
+
+  <p class="read-more-wrap">For the last year, I have been working on constructing composite galaxy SEDs based on the sample used in Kriek et. al. (2011)<span class="read-more-target"><br>When looking at very faint distant galaxies, it is almost impossible to get high quality spectroscopic data. Usually, only photometric data can be obtained, however, this gives only a single point on a spectrum. Broadband photometry allows for the overall general shape of the spectral curve to be seen, but with only several photometric points, there is no chance of picking out individual spectral lines such as H-alpha.
+
+Dr. Kriek developed a method of creating SED's which actually show such spectroscopic features. The method reduces to taking a large sample of galaxies ~3500 from a sky survey with a lot of data from different bands, de-redshifting them, and then matching them. Using an iterative method, the galaxies could be sorted into 32 SED types (with some galaxies from the initial survey rejected for noise, etc). Then all galaxies in each type were scaled to one of the galaxies termed the "primary" galaxy, with the output being a broadband SED but with many, many more data points (all of the gaps filled in). From this, lines like H-alpha are actually resolved.
+
+These SED's allow us to fit models of SFR (star formation rate) to each class of galaxy and then determine a SFH (star formation history). Collectively these models are known as SPS or Stellar Populaiton Synthesis models. However, an important factor in setting up the model involves the amount of dust attenuation in the galaxy, either to ISM dust or CSM dust around stars. Light from stars is absorbed by the dust and then re-radiated at long wavelengths. While the origina SED's produced were only in the optical range, if they could be extended into IR, it would allow for the SFR models to actually model the dust emmision, and leave factors like dust temperature, PAH, and optical depth (amount of dust) as free parameters, allowing us to constrain the properties of the SED types even further.
+
+I am using Herschel data, which is IR photometry, to extend the SED curves into IR and allow for the fitting of full SFR+dust models to the data. The first step was sorting through the catalog of Herschel fluxes and pulling those which match the galaxies used in the original optical composite SED creation, and sort them by SED type. I then began stacking the data using different methods to produce the points that will be used when fitting the SFR models.
+
+
+With the extended SED's created, it comes time to fit them using the SPS models. Using the FSPS (flexible stellar population synthesis) code by Conroy et. al., one can input a variety of parameters for SFH, dust temperature and type, various published profiles for attenuation, etc, and generate a model spectrum which would be what you expect from a galaxy with those characteristics. By nesting many iterations over the accepted value ranges for each parameter, we create a library of many (several hundred thousand) sample spectra with different combinations of all the relevant parameters. Using either a chi-squared fit or an MCMC, we will explore this parameter space and find which generated SPS spectra best matches our SED for each SED type, giving valuable insight into the dust properties of those types of galaxies. One of the parameters not mentioned above is the age of the galaxy, as the spectrum changes over time after the primary "starburst" of star formation. Fig. 3 shows an animation of one of the SPS outputs, evolving over time.</span></p>
+  
+  <label for="post-1" class="read-more-trigger"></label>
+</div>
+<p></p><p></p>
+
+
+</div>
+</body>
+</html>
