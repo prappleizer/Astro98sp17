@@ -31,10 +31,10 @@ Verify your installation by making sure brew --version doesn’t error at your t
 Restart your terminal at this point (not just closing the window, but quitting the application from the bar) and then reopening.
 Ensure the installation worked by running ```conda --version```.
 
-6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.5, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
+6) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.7, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
 ```
- # Create a conda env called pydecal that uses python 3.5
- conda create --name pydecal python=3.5
+ # Create a conda env called pydecal that uses python 3.7
+ conda create --name pydecal python=3.7
 
 # Switch to the pydecal environment
 source activate pydecal
@@ -56,7 +56,7 @@ To continue to the next part (setting up the assignments directory), click here:
 
 ## Windows 
 
-1) Visit https://www.continuum.io/downloads#windows and download the installer for Python 3.5. Download the 64-bit installer if your computer is 64-bit (more likely), the 32-bit installer if not. You can Google how to check whether your computer is 64 or 32 bit.
+1) Visit https://www.continuum.io/downloads#windows and download the installer for Python 3.x. Download the 64-bit installer if your computer is 64-bit (more likely), the 32-bit installer if not. You can Google how to check whether your computer is 64 or 32 bit.
 
 2) Leave all the options as default (install for all users, in the default location). Make sure both of the checkboxes (add to path, register) are checked.
 
@@ -64,10 +64,10 @@ To continue to the next part (setting up the assignments directory), click here:
 
 4) Verify that the installation is working by starting the Anaconda Prompt (you should be able to start it from the Start Menu) and typing ```python```:
 
-5) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.5, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
+5) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3.x, but you might have another that uses Python 2.7. With a conda environment, you can switch between those at will.
 ```
- # Create a conda env called pydecal that uses python 3.5
- conda create --name pydecal python=3.5
+ # Create a conda env called pydecal that uses python 3.x
+ conda create --name pydecal python=3.x
 
  # Switch to the pydecal environment
  activate pydecal
@@ -108,12 +108,12 @@ sudo apt-get install wget
 
 2) Download the Anaconda installation script:
 ```
-wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86_64.sh
 ```
 If you have a 32-bit operating system, use this command instead.
 
 ```
-wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86.sh
+wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-5.3.1-Linux-x86.sh
 ```
 
 3) Install Anaconda:
@@ -124,7 +124,7 @@ Ensure the installation worked by running ```conda --version```.
 
 4) Run these commands to create a new conda environment. Each conda environment has its own package versions. This allows us to switch between package versions easily. For example, this class uses Python 3, but you might have another that uses Python 2. With a conda environment, you can switch between those at will.
 ```
-conda create --name pydecal python=3.5
+conda create --name pydecal python=3.7
 ```
 ```
 source activate pydecal
