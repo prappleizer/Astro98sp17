@@ -21,7 +21,7 @@ Verify your installation by making sure brew --version doesn’t error at your t
 4) Download the Anaconda installation script (if you do not already have anacondas distribution of python on your computer:
 ```
  # Uses wget to download the installation script, naming it install_anaconda.sh
- wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda3-4.2.0-MacOSX-x86_64.sh
+ wget -O install_anaconda.sh https://repo.continuum.io/archive/Anaconda2-5.3.1-MacOSX-x86_64.sh
 ```
 5) Install Anaconda:
 ```
